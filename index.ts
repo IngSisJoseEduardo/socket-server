@@ -3,7 +3,9 @@ import Server from './classes/server';
 import router from './routes/router';
 import bodyParser from 'body-parser';
 import cors from 'cors';
-const server = new Server();
+
+// llamando a la unoca instancia del server
+const server = Server.instance;
 
 // Body parser
 server.app.use(bodyParser.urlencoded({ extended: true}));
