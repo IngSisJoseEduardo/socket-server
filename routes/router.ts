@@ -76,7 +76,7 @@ router.get('/usuarios', (req:Request, res:Response) => {
 router.get('/usuarios/detalle',(req:Request, res:Response)=> {
     res.json({
         ok:true,
-        clientes: usuariosConectados.getLista();
+        clientes: usuariosConectados.getLista()
     })
 });
 export default router;
